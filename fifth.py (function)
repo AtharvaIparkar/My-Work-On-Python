@@ -65,3 +65,45 @@ def a(x,y,z):
     else:
         print(n3,"is greater")
 a(n1,n2,n3)
+
+
+# check whether num is odd or even by using class
+class Even_odd:
+    def get_num(self,n):
+        self.n=n
+    def cal(self):
+        if self.n%2==0:
+            print("Even")
+        else:
+            print("Odd")
+E1=Even_odd()
+E1.get_num(10)
+E1.cal()
+
+
+# student details by using class
+class student:
+    def get_detail(self,n,a,e):
+        self.n=n
+        self.a=a
+        self.e=e
+    def show_details(self):
+        print("name:",self.n)
+        print("age:",self.a)
+        print("address:",self.e)
+s1=student()
+s1.get_detail("Atharva","18","ZCOER")
+s1.show_details()
+
+
+# check whether num upto n are odd or even 
+class evenodd:
+    def a(b):
+        for i in range(0,b):
+            if i%2==0:
+                print("Even",i)
+            else:
+                print("Odd",i)
+x=evenodd
+x.a(11)
+
