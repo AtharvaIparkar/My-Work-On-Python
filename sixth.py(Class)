@@ -1,3 +1,4 @@
+#To check whether a num is even or odd using class
 class Even_odd:
     def get_num(self,n):
         self.n=n
@@ -10,8 +11,8 @@ E1=Even_odd()
 E1.get_num(10)
 E1.cal()
 
-student details by using class
 
+#Student details by using class
 class Student:
     def get_detail(self,n,a,e):
         self.n=n
@@ -26,7 +27,7 @@ S1.get_detail("jayesh","18","ZCOER")
 S1.show_details()
 
 
-
+#Student details by class by taking input from user
 name=input("")
 age=int(input(""))
 address=input("")
@@ -42,7 +43,9 @@ class Student:
 S1=Student()
 S1.get_detail(name,age,address)
 S1.show_details()
-check odd even upto n term
+
+
+#Check odd or even num upto n term using class
 class Even_odd:
     def get_num(self,n):
         self.n=n
@@ -55,3 +58,40 @@ class Even_odd:
 e1=Even_odd()
 e1.get_num(20)
 e1.cal()
+
+
+#Consructor
+class Employee:
+    def __init__ (self,name,age,salary,gender):
+        self.name=name
+        self.age=age
+        self.salary=salary
+        self.gender=gender
+    def employee_details(self):
+        print("Name of employee :",self.name)
+        print("Age of employee :",self.age)
+        print("Salary of enployee :",self.salary)
+        print("Gender of employee",self.gender)
+e1=Employee ("rahul",21,40000,"male")
+e1.employee_details()
+
+
+# Single Inheritance
+class Vehicle:
+    def __init__(self,mileage,cost):
+        self.mileage=mileage
+        self.cost=cost
+    def show_details(self):
+        print("I am a Vehicle")
+        print("Mileage of vehicle is :",self.mileage)
+        print("Cost of vehicle is :",self.cost)
+v1=Vehicle(12,500000)
+v1.show_details()
+
+class car(Vehicle):
+    def show_car(self):
+        print("I am a car")
+c1=car(10,300000)
+c1.show_car()
+c1.show_details()
+
