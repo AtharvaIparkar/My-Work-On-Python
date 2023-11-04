@@ -95,3 +95,66 @@ c1=car(10,300000)
 c1.show_car()
 c1.show_details()
 
+
+# POLYMORPHISM
+
+# Method overloading
+class Rp:
+    def display(self,name=''):
+        print("welcome to ZEAL COLLEGE :"+name)
+obj=Rp()
+obj.display()
+obj.display('python')
+obj.display('Atharva')
+
+
+# Method overriding
+class India:
+    def display(self):
+        print("welcome to India")
+
+class MH(India):
+    def display(self):
+         super().display()
+         print("Welcome to MH")
+obj=MH()
+obj.display()
+
+
+# ENCAPSULATION IN PYTHON
+class Super:
+    def __init__(self):
+        self._value1=100       #Protected member
+        self.__value2=200      #Private member       
+    def display(self):
+        print(self._value1)
+        print(self.__value2)
+class Sub(Super):
+    def show(self):
+        print(self._value1)
+        print(self.__value2)    #Private member
+# obj=Super()
+# obj.display()
+obj=Sub()
+obj.show()
+
+
+# EXCEPTION
+try:
+    a=10
+    b=1
+    c=a/b
+    print("ans :",c)
+except:
+    print("Error")
+else:
+    print("",c)
+finally:
+    print("good")
+
+
+
+
+
+
+
