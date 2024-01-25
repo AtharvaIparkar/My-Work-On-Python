@@ -31,7 +31,7 @@ a={"brand": "force", "model": "gurkha", "year":"1984"}
 print(dict["year"])
 
 #print keys & values diffrently
-a={"brand":"mahindra", "model": "thar" "year":"2023") 
+a={"brand":"mahindra", "model": "thar" "year":"2023"}
 x=dict.keys(a)
 y=dict.values(a)
 print (x)
