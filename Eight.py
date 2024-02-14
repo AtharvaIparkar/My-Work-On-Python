@@ -15,3 +15,22 @@ print(a)
 print(b)
 print(letters)
 
+
+a=[]
+while True:
+    d=input()
+    if d =="":
+        break
+    else:
+        a.append(float(d))
+print(a)
+print(sum(a))
+print(sum(a)/len(a))
+
+a=[1,2,3,5,14,33]
+print(sum(a))
+b=(sum(a)/len(a))
+print(b)
+if len(a):
+
+
