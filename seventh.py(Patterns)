@@ -125,3 +125,46 @@ for i in range(1,n+1):
 # * * * *      * * * *
 # * * * * *  * * * * *
 
+for x in range(1,4):
+    print("* "*x)
+# Output
+# *
+# * *
+# * * *
+
+for x in range(1,5):
+    print(" "*(5-x),"* "*x)
+# Output
+#      * 
+#     * * 
+#    * * * 
+#   * * * *
+
+for x in range(1,5):
+    print(" "*(5-x),"* "*x)
+for j in range(3,0,-1):
+    print(" "*(5-j),"* "*j)
+# Output
+#      * 
+#     * *
+#    * * *
+#   * * * *
+#    * * *
+#     * *
+#      *
+
+user="Python"
+for x in range (len(user)+1):
+    print(user[:x])
+# Output
+# P     
+# Py    
+# Pyt   
+# Pyth  
+# Pytho 
+# Python
+
+
+
+
+
