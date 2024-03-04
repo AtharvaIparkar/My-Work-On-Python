@@ -36,5 +36,16 @@ print(a)
 print(sum(a))
 print(sum(a)/len(a))
 
+# Finding the no. of vowels in a given string
+s="Create A Triangle By Word"
+count=0
+ss = s.lower()
+for x in ss:
+    if x in 'aeiou':
+        count+= 1
+print(count)
+
+
+
 
 
