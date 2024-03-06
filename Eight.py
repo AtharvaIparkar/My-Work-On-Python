@@ -45,6 +45,22 @@ for x in ss:
         count+= 1
 print(count)
 
+# Reversing a string
+user = "Ram is a Good Boy"
+line = user.split()
+line = line[ ::-1]
+rev_str = " "
+for word in line:
+    rev_str = rev_str + word + " "
+print(rev_str)
+
+# Function for addition of no. given by user
+def add(*a):
+    sum = 0
+    for num in a:
+        sum += num
+    print(sum)
+add(1,2,3,4,5)
 
 
 
